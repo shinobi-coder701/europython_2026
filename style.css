@@ -355,6 +355,39 @@ pre, .slidev-code, .shiki, .shiki code, .shiki .line {
   line-height: 1.15;
 }
 
+.slidev-layout.recommended-sentinel h2 {
+  margin-bottom: 0.65rem !important;
+}
+
+.slidev-layout.recommended-sentinel .note {
+  margin: 0.15rem 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.slidev-layout.recommended-sentinel .slidev-code,
+.slidev-layout.recommended-sentinel .shiki,
+.slidev-layout.recommended-sentinel .shiki code,
+.slidev-layout.recommended-sentinel .shiki .line,
+.slidev-layout.recommended-sentinel .slidev-code code,
+.slidev-layout.recommended-sentinel .slidev-code pre {
+  font-size: 25px !important;
+  line-height: 1.1 !important;
+}
+
+.slidev-layout.recommended-sentinel .slidev-code,
+.slidev-layout.recommended-sentinel .shiki.slidev-code {
+  margin: 0.15rem 0;
+  padding: 0.42rem 0.7rem;
+}
+
+.slidev-layout.recommended-sentinel .comparison-takeaway {
+  margin-top: 0;
+  padding: 0.15rem 0.45rem;
+  font-size: 27px;
+  line-height: 1.15;
+}
+
 .slidev-layout.payload-shapes h2 {
   margin-bottom: 0.7rem !important;
 }
