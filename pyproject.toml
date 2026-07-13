@@ -1,0 +1,43 @@
+[project]
+name = "europython-2026"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "ty>=0.0.11",
+    "typing-extensions @ git+https://github.com/python/typing_extensions.git@main",
+]
+
+authors = [
+    { name = "Koudai Aono", email = "koxudaxi@gmail.com" },
+]
+maintainers = [
+    { name = "Koudai Aono", email = "koxudaxi@gmail.com" },
+]
+description = "Code for EuroPython 2026 talk"
+readme = "README.md"
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+]
+
+[tool.ty.environment]
+python-version = "3.14"
+
+[dependency-groups]
+dev = [
+    "tox>=4.32.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+packages = ["src"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
