@@ -236,7 +236,7 @@ layout: default
 
 ```python {none|4|6}
 def update_user(
-    user_id: str,
+    user: User,
     *,
     nickname: str | None = None,
 ) -> None:
