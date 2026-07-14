@@ -702,11 +702,10 @@ class: compact-code recommended-sentinel
 ## Recommended: `sentinel()`
 
 
-<div class="note">Python 3.15 adds <code>builtins.sentinel()</code>; <code>typing_extensions</code> main already has lowercase <code>sentinel</code>.</div>
+<div class="note">Python 3.15 adds <code>builtins.sentinel</code>; <code>typing_extensions</code> 4.16+ provides the lowercase backport.</div>
 
-```python {none|1-2|3|8-9}
-# Until checkers catch up with lowercase sentinel:
-from typing_extensions import Sentinel as sentinel
+```python {none|1|2|6-8}
+from typing_extensions import sentinel
 UNSET = sentinel("UNSET")
 def patch_user(
     user: User,
@@ -718,7 +717,7 @@ def patch_user(
 ```
 
 <div class="comparison-takeaway">
-  <strong>Practical note:</strong> the runtime API is moving to lowercase <code>sentinel</code>; checker support may lag the source.
+  <strong>Current API:</strong> import and call lowercase <code>sentinel</code>; <code>Sentinel</code> is only a soft-deprecated compatibility alias.
 </div>
 
 <!--
@@ -1210,7 +1209,7 @@ class: tools-version
     <tr v-click><td>aliases</td><td><code>type</code> statement</td><td>3.12+</td><td>-</td></tr>
     <tr v-click><td>immutability</td><td><code>ReadOnly</code></td><td>3.13+</td><td>4.9+</td></tr>
     <tr v-click><td>narrowing</td><td><code>TypeIs</code></td><td>3.13+</td><td>4.10+</td></tr>
-    <tr v-click><td>sentinels</td><td><code>sentinel()</code></td><td>3.15+</td><td>main</td></tr>
+    <tr v-click><td>sentinels</td><td><code>sentinel()</code></td><td>3.15+</td><td>4.16+</td></tr>
   </tbody>
 </table>
 

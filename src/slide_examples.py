@@ -3,8 +3,7 @@ from __future__ import annotations
 from collections.abc import Mapping
 from dataclasses import dataclass
 
-# Type checkers do not all understand the lowercase backport yet.
-from typing_extensions import NotRequired, Sentinel as sentinel, TypeIs, TypedDict
+from typing_extensions import NotRequired, TypeIs, TypedDict, sentinel
 
 
 UNSET = sentinel("UNSET")
