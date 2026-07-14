@@ -696,7 +696,7 @@ Finish this slide by 15:45
 -->
 ---
 layout: default
-class: compact-code
+class: compact-code recommended-sentinel
 ---
 
 ## Recommended: `sentinel()`
@@ -1037,6 +1037,7 @@ Finish this slide by 23:35
 -->
 ---
 layout: default
+class: compact-code
 ---
 
 ## The domain dataclass
