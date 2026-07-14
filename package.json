@@ -3,15 +3,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "dev:remote": "slidev --open --remote",
+    "build": "node init && slidev build",
+    "dev": "node init && slidev --open",
+    "dev:remote": "node init && slidev --open --remote",
     "export": "slidev export"
   },
   "dependencies": {
     "@slidev/cli": "^52.0.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "vue": "^3.5.17"
   }
 }

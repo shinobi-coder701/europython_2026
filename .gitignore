@@ -148,7 +148,6 @@ activemq-data/
 *.sage.py
 
 # Environments
-.env
 .envrc
 .venv
 env/
@@ -225,3 +224,4 @@ dist
 .DS_Store
 /.idea/
 
+config.bat
